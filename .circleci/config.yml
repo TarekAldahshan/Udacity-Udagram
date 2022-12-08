@@ -9,7 +9,7 @@ jobs:
   build:
     docker:
       # the base image can run most needed actions with orbs
-      - image: "cimg/node:16.17.1"
+      - image: "cimg/base:stable"
           # TODO: Set enviroment variables
           environment:
           POSTGRES_USERNAME: postgres
