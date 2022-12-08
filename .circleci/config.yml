@@ -34,6 +34,20 @@ jobs:
       - run:
           name: API Build
           command: npm run api:build
+          environment:
+            POSTGRES_USERNAME: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: postgres
+            PORT: 8080
+            db-PORT: 5432
+            POSTGRES_HOST: database-1.c3of9rlrzweb.us-east-1.rds.amazonaws.com
+            AWS_REGION: us-east-1
+            AWS_PROFILE: default
+            AWS_BUCKET: arn:aws:s3:::udacity-udagram-tarek-aldahshan/archive.zip
+            URL: http://udacityudagram-env.eba-p4ybyppz.us-east-1.elasticbeanstalk.com/
+            JWT_SECRET: abcdef
+            AWS_ACCESS_KEY_ID: AKIATQO5GY6FFACFT5L3
+            AWS_SECRET_ACCESS_KEY: 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
   # deploy step will run only after manual approval
   deploy:
     docker:
@@ -47,8 +61,6 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: Set Enviroment Variable
-          command: eb setenv POSTGRES_USERNAME:postgres POSTGRES_PASSWORD:postgres POSTGRES_DB:postgres PORT:8080 db-PORT:5432 POSTGRES_HOST:database-1.c3of9rlrzweb.us-east-1.rds.amazonaws.com AWS_REGION:us-east-1 AWS_PROFILE:default AWS_BUCKET:arn:aws:s3:::udacity-udagram-tarek-aldahshan/archive.zip URL:http://udacityudagram-env.eba-p4ybyppz.us-east-1.elasticbeanstalk.com/ JWT_SECRET:abcdef AWS_ACCESS_KEY_ID:AKIATQO5GY6FFACFT5L3 AWS_SECRET_ACCESS_KEY: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
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: npm run deploy
