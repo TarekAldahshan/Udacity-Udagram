@@ -1,0 +1,29 @@
+branch-defaults:
+  master:
+    environment: Udacityudagram-env-my-nd0067-c4-deployment-process-project-starter-master-master
+global:
+  application_name: nd0067-c4-deployment-process-project-starter-master-master
+  default_ec2_keyname: null
+  default_platform: Node.js 16 running on 64bit Amazon Linux 2
+  default_region: us-east-1
+  sc: git
+
+# branch-defaults:
+#   default:
+#     environment: Udacityudagram-env
+# environment-defaults:
+#   Udacityudagram-env:
+#     branch: null
+#     repository: null
+# global:
+#   application_name: udacity-udagram
+#   default_ec2_keyname: null
+#   default_platform: Node.js 16 running on 64bit Amazon Linux 2
+#   default_region: us-east-1
+#   include_git_submodules: true
+#   instance_profile: null
+#   platform_name: null
+#   platform_version: null
+#   profile: eb-cli
+#   sc: null
+#   workspace_type: Application
