@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 export var environment = {
     production: true,
-    appName: "Udagram",
-    apiHost: "http://udacity-udagram-tarek-aldahshan.s3-website-us-east-1.amazonaws.com/api/v0",
+    appName: 'Udagram',
+    apiHost: 'http://udacity-udagram-tarek-aldahshan.s3-website-us-east-1.amazonaws.com/api/v0',
 };
 /*
  * For easier debugging in development mode, you can import the following file

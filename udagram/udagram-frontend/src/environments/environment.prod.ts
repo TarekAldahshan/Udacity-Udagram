@@ -5,8 +5,7 @@
 export const environment = {
   production: true,
   appName: 'Udagram',
-  // apiHost: 'http://udacity-udagram-tarek-aldahshan.s3-website-us-east-1.amazonaws.com/api/v0',
-  apiHost: 'http://localhost:8080/api/v0',
+  apiHost: 'http://udacity-udagram-tarek-aldahshan.s3-website-us-east-1.amazonaws.com/api/v0',
 };
 
 /*
