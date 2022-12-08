@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: Udacityudagram-env-Udacity-Udagram
+    environment: Udacityudagram-env
 global:
   application_name: Udacity-Udagram
   default_ec2_keyname: null
