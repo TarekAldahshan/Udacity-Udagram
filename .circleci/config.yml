@@ -37,22 +37,12 @@ jobs:
       - image: "cimg/base:stable"
       # more setup needed for aws, node, elastic beanstalk
     steps:
+       # install node and checkout code
+      - node/install:
+          node-version: '16.17.1' 
       - eb/setup
       - aws-cli/setup
       - checkout
-      # TODO: Set enviroment variables
-          environment:
-          POSTGRES_USERNAME: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: postgres
-          PORT: 8080
-          db-PORT: 5432
-          POSTGRES_HOST: database-1.c3of9rlrzweb.us-east-1.rds.amazonaws.com
-          AWS_REGION: us-east-1
-          AWS_PROFILE: default
-          AWS_BUCKET: arn:aws:s3:::udacity-udagram-tarek-aldahshan/archive.zip
-          URL: http://udacityudagram-env.eba-p4ybyppz.us-east-1.elasticbeanstalk.com/
-          JWT_SECRET: abcdef
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
