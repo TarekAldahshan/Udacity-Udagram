@@ -12,6 +12,7 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - checkout
+      - node/install
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
