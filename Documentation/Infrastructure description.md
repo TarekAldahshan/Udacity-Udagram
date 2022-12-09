@@ -2,9 +2,9 @@
 Develop Web Application Then Hosting At Amazon Web Service
 
 ## Hosting Requirements
-- AWS RDS
-- AWS Elastic Beanstack
-- AWS S3
+- AWS RDS : Service at amazon used for Database Hosting
+- AWS Elastic Beanstack : Service at amazon used for Backend Hosting
+- AWS S3 : Service at amazon used for Frontend Hosting
 
 # Infrastructure Describtion
 

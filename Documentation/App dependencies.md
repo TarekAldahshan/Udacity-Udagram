@@ -1,6 +1,8 @@
 # Application Dependencies:
+these all dependecies for running application
 
 ## Production Dependencies:
+for developers to run this application on production they must install
 - @types/bcryptjs Version 2.4.2 .
 - @types/jsonwebtoken Version 8.5.9 .
 - aws-sdk Version 2.429.0 .
@@ -31,6 +33,7 @@
 - zone.js Version 0.9.1- 
 
 ## Development Dependencies:
+for developers to run this application on development they must install
 - devDependencies- :{
 - @angular-devkit/architect Version 0.12.3 .
 - @angular-devkit/build-angular Version 0.803.24 .

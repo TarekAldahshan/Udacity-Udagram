@@ -78,12 +78,4 @@ The e2e tests are using Protractor and Jasmine.
 [License](LICENSE.txt)
 
 # End Point 
-http://elasticbeanstalk-us-east-1-241518954378.s3-website-us-east-1.amazonaws.com
-
-# AWS Services
-# RDS For DB
-# Elastic Beanstack For Api
-# s3 fro front end
-
-# screen shots
-# in mock folder
+http://udacity-udagram-tarek-aldahshan.s3-website-us-east-1.amazonaws.com

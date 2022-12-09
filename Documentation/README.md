@@ -13,4 +13,7 @@ install back end dependencies
 # Licence 
 Open Source Applications From Udacity designed for training
 
+# screen shots
+you can find required screenshoots in mock folder
+
 
